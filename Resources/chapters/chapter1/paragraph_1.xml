@@ -1,0 +1,17 @@
+<paragraph>
+  <body>
+    <text>Hello?</text>
+    <text>Okay I'm in</text>
+    <playertext>I think you might have the wrong number</playertext>
+    <text>No, I don't</text>
+  </body>
+  <choices>
+    <choice goto="chapter_2">
+      <goto>chapter_2</goto>
+      <text>Yes, you do.</text>
+    </choice>
+    <choice goto="scene_3">
+      <text>Okay.</text>
+    </choice>
+  </choices>
+</paragraph>
