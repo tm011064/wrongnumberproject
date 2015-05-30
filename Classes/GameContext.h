@@ -11,7 +11,7 @@ private:
 
   ResolutionPolicy m_resolutionPolicy;
 
-  Size m_originalSize;
+  cocos2d::Size m_originalSize;
   std::string m_fontNormalPath;
   ResourceDefinition m_resourceDefinition;
   float m_fontHeightNormal;
@@ -20,8 +20,8 @@ public:
   GameContext();
   ~GameContext();
 
-  Size getOriginalSize() { return this->m_originalSize; }
-  void setOriginalSize(Size originalSize) { this->m_originalSize = originalSize; }
+  cocos2d::Size getOriginalSize() { return this->m_originalSize; }
+  void setOriginalSize(cocos2d::Size originalSize) { this->m_originalSize = originalSize; }
 
   ResourceDefinition getResourceDefinition() { return this->m_resourceDefinition; }
   void setResourceDefinition(ResourceDefinition resourceDefinition) { this->m_resourceDefinition = resourceDefinition; }
