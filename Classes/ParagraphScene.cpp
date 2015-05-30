@@ -40,21 +40,21 @@ bool ParagraphScene::parseXml(const std::string& filename)
 
   if (!element || std::strcmp(element->Name(), "paragraph") != 0)
   {
-    CCLOG("Xml Error at '%s': wrong format -> paragraph tag not root element", filename);
+    CCLOG("Xml Error at '%s': wrong format -> paragraph tag not root element", filename.c_str());
     return false;
   }
 
   element = element->FirstChildElement();
   if (!element || std::strcmp(element->Name(), "body") != 0)
   {
-    CCLOG("Xml Error at '%s': wrong format -> body element expected", filename);
+    CCLOG("Xml Error at '%s': wrong format -> body element expected", filename.c_str());
     return false;
   }
 
   element = element->FirstChildElement();
   if (!element || (std::strcmp(element->Name(), "left") != 0 && std::strcmp(element->Name(), "right") != 0))
   {
-    CCLOG("Xml Error at '%s': wrong format -> left or right element expected in body", filename);
+    CCLOG("Xml Error at '%s': wrong format -> left or right element expected in body", filename.c_str());
     return false;
   }
 

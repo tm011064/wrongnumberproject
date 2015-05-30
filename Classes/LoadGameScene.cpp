@@ -48,7 +48,7 @@ void LoadGameScene::loadGame(float dt)
 
   // Fonts
   ValueMap vm = fileUtils->getValueMapFromFile(
-    fileUtils->sharedFileUtils()->fullPathForFilename("fontResourceLookup.plist"
+    fileUtils->fullPathForFilename("fontResourceLookup.plist"
     ));
 
   ValueMap valueMap = vm["filenames"].asValueMap();

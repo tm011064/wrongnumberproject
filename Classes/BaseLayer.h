@@ -12,8 +12,7 @@ private:
   BaseLayer(const std::function<void()>& backKeyCallback);
 
 public:
-  // TODO (Roman): use CC_CALLBACK_1 instead (std::bind)
-  BaseLayer::~BaseLayer(){}
+  //BaseLayer::~BaseLayer(){}
 
   virtual void onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event);
   virtual bool init();

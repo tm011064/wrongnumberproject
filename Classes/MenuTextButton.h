@@ -23,7 +23,7 @@ private:
   Vec2 m_borderOrigin;
   Vec2 m_borderDestination;
 
-  MenuTextButton::MenuTextButton(GameContext* gameContext, std::string text, Color3B textColor, Color4F backgroundColor
+  MenuTextButton(GameContext* gameContext, std::string text, Color3B textColor, Color4F backgroundColor
     , Size size)
     : m_text(text)
     , m_textColor(textColor)
@@ -37,7 +37,7 @@ private:
   void addEvents();
 
 public:
-  MenuTextButton::~MenuTextButton(){}
+  //MenuTextButton::~MenuTextButton(){}
   
   static MenuTextButton *create(GameContext* gameContext, std::string text, Color3B textColor, Color4F backgroundColor
     , Size size);
