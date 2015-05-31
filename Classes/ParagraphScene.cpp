@@ -52,7 +52,7 @@ bool ParagraphScene::parseXml(const std::string& filename)
   {
     if (std::strcmp(element->Name(), "body") == 0)
     {
-      auto textNodeElement = element->FirstChildElement();
+      auto textNodeElement = element->LastChildElement();
       if (!textNodeElement || (std::strcmp(textNodeElement->Name(), "left") != 0 && std::strcmp(textNodeElement->Name(), "right") != 0))
       {
         CCLOG("Xml Error at '%s': wrong format -> left or right element expected in body", filename.c_str());
@@ -103,7 +103,7 @@ bool ParagraphScene::parseXml(const std::string& filename)
 
         scrollView->addChild(label);
 
-        textNodeElement = textNodeElement->NextSiblingElement();
+        textNodeElement = textNodeElement->PreviousSiblingElement();
       }
 
       scrollView->setInnerContainerSize(Size(scrollSize.width, round(yPos + 50.0f)));
