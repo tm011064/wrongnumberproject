@@ -1,0 +1,19 @@
+<paragraph>
+  <body>
+    <left>P3</left>
+    <left>Okay I'm in.</left>
+    <right>I think you might have the wrong number</right>
+    <left>No, I don't</left>
+    <left>Hello?</left>
+  </body>
+  <choices>
+    <choice>
+      <goto>chapters/chapter1/paragraph_1.xml</goto>
+      <text>GOTO P1</text>
+    </choice>
+    <choice>
+      <goto>chapters/chapter1/paragraph_2.xml</goto>
+      <text>GOTO P2</text>
+    </choice>
+  </choices>
+</paragraph>

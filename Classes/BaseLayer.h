@@ -12,7 +12,7 @@ private:
   BaseLayer(const std::function<void()>& backKeyCallback);
 
 public:
-  //BaseLayer::~BaseLayer(){}
+  ~BaseLayer(){}
 
   virtual void onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event);
   virtual bool init();

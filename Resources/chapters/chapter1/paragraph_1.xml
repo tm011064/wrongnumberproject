@@ -25,12 +25,13 @@
     <left>No, I don't</left>
   </body>
   <choices>
-    <choice goto="chapter_2">
-      <goto>chapter_2</goto>
-      <text>Yes, you do.</text>
+    <choice>
+      <goto>chapters/chapter1/paragraph_2.xml</goto>
+      <text>Yes, you do. 2</text>
     </choice>
-    <choice goto="scene_3">
-      <text>Okay.</text>
+    <choice >
+      <goto>chapters/chapter1/paragraph_3.xml</goto>
+      <text>Okay. 3</text>
     </choice>
   </choices>
 </paragraph>
